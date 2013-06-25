@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/temp_background"
+    android:orientation="vertical"
+    android:visibility="visible" style="@drawable/convert_button">
+
+    <TextView
+        android:id="@+id/tempTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="Temperature"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/finalTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:text="0.0"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/convertTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finalTemp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/convert_button"/>
+
+    <EditText
+        android:id="@+id/tempInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/convertTemp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Starting Number"
+        android:inputType="number|numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/tempSelect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempInput"
+        android:layout_alignRight="@+id/tempInput" >
+
+        <RadioButton
+            android:id="@+id/cTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Celcius"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/fTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" android:textSize="14dp"/>
+
+        <RadioButton
+            android:id="@+id/kTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelvin"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/tempSelect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tempSelect2"
+        android:layout_toLeftOf="@+id/tempSelect2" >
+
+        <RadioButton
+            android:id="@+id/cOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Celcius"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/fOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fahrenheit"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" android:textSize="14dp"/>
+
+        <RadioButton
+            android:id="@+id/KOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelvin"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempSelect1"
+        android:layout_toLeftOf="@+id/convertTemp"
+        android:text="From" android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempSelect2"
+        android:layout_toRightOf="@+id/convertTemp"
+        android:text="To" android:textColor="@android:color/black"/>
+
+</RelativeLayout>

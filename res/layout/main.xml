@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/converter_background" >
+
+    <Button
+        android:id="@+id/distanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Distance" />
+
+    <Button
+        android:id="@+id/massButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/distanceButton"
+        android:layout_below="@+id/distanceButton"
+        android:text="Mass/Weight" />
+
+    <Button
+        android:id="@+id/volumeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/massButton"
+        android:layout_below="@+id/massButton"
+        android:text="Volume" />
+
+    <Button
+        android:id="@+id/temperatureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/volumeButton"
+        android:text="Temperature" />
+
+</RelativeLayout>

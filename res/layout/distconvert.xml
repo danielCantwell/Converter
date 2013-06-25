@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ruler"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/finalDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:text="0.0" android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/conDistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finalDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/convert_button"/>
+
+    <EditText
+        android:id="@+id/distanceInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/conDistButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Enter Starting Number"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/distSpinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/distanceInput"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"/>
+
+    <Spinner
+        android:id="@+id/distSpinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/distSpinner2"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/distanceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="Distance" android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/distSpinner2"
+        android:text="To" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/distSpinner1"
+        android:layout_toLeftOf="@+id/distanceInput"
+        android:text="From" />
+
+</RelativeLayout>
