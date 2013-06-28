@@ -206,7 +206,7 @@ public class Convert {
 		return (float) ((num * 9.0 / 5.0) + 32.0);
 	}
 	public static float cToK(float num) {
-		return (float) + 273.15;
+		return (float) (num + 273.15);
 	}
 	
 	// Kelvin
