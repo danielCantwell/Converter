@@ -3,9 +3,12 @@ Converter
 
 Android App to Convert Units
 
-Conversions Available:
+_Conversions Available:_
 
-  Distance
-  Mass/Weight
-  Volume
-  Temperature
+  *Distance*
+  
+  *Mass/Weight*
+  
+  *Volume*
+  
+  *Temperature*
